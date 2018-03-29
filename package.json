@@ -1,19 +1,24 @@
 {
   "name": "clickgame",
   "version": "1.0.0",
-  "description": "Memory card game",
-  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "gh-pages": "^1.1.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.0.17"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ir1shaz/clickgame.git"
-  },
-  "author": "Andy Sargent",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ir1shaz/clickgame/issues"
-  },
-  "homepage": "https://github.com/ir1shaz/clickgame#readme"
+  "homepage": "https://github.com/ir1shaz/clickgame",
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
+  }
 }
