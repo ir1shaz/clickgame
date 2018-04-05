@@ -36,7 +36,7 @@ class App extends Component {
   incrementScore = () => {
     this.setState({ score: this.state.score + 1 });
     if (this.state.score === 12){
-      alert("Congratulations! You are a memory wizard!");
+      alert("Thats whats up!! You're a memory madman!");
       this.setState({
         guessedCards: [],
         score: 0
@@ -59,7 +59,7 @@ class App extends Component {
     }
 
     else {
-      alert("This card has already been clicked!");
+      alert("This card has already been clicked yo!");
       this.setState({
         guessedCards: [],
         score: 0
@@ -76,8 +76,8 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to the Clicky Memory Game</h1>
-          <p>Click on an image to earn points, but don't click on any more than once!</p>
+          <h1 className="App-title">Welcome to the Clicky Sports Memory Game</h1>
+          <p>Click on an pic to earn points, but don't click a pic more than once!</p>
           <p>Score: {this.state.score}    Top Score: {this.state.topScore}</p>
 
         </header>
