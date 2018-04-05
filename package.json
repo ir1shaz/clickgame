@@ -2,7 +2,7 @@
   "name": "clickgame",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://github.com/ir1shaz/clickgame",
+  "homepage": "https://ir1shaz.github.io/clickgame" ,
   "dependencies": {
     "gh-pages": "^1.1.0",
     "prop-types": "^15.6.0",
